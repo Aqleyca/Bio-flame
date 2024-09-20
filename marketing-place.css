@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 12%;
+    background: rgba(0, 0, 0, 8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-3A {
+    width: 70px;
+    height: 70px;
+}
+
+
+.logo-company {
+    font-size: 40px;
+    color: black;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+span {
+    color: rgb(94, 179, 157);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #191919;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(255, 68, 0, 0);
+}
+
+nav ul li a:hover {
+    color: rgb(94, 179, 157);
+    border-bottom: 1px solid rgb(94, 179, 157);
+}
+
+.list-2 {
+    font-size: 28px;
+    display: none;
+}
+
+.nav {
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3 ease;
+}
+
+.nav:hover,
+.nav :active {
+    color: rgb(94, 179, 157);
+    border-bottom: 3px solid rgb(94, 179, 157);
+
+}
+
+.about {
+    font-size: xx-large;
+    margin-top: 500px;
+    color: black;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li:last-of-type {
+        padding-bottom: 8px;
+    }
+
+    #menu-list{
+        position: absolute;
+        width: 100%;
+        background-color: rgb(94, 179, 157);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        top: 90px;
+        left: -32px;
+    }
+
+    nav ul.hidden {
+        display: none;
+    }
+
+    .list-2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .header {
+        padding: 15px 12px 15px 12px;
+    }
+
+    .logo-company {
+        font-size: 35px;
+    }
+
+    .logo-3A {
+        width: 60px;
+        height: 60px;
+        object-fit: fill;
+    }
+}
